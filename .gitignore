@@ -8,3 +8,4 @@ gh-pages/*
 .twine
 *.log
 .DS_STORE
+.gitpod.yml

@@ -38,11 +38,6 @@
     <<replace "#tutorial">>Download the `_title` file, and then import the scenario [[here|_link]].<</replace>>
     <</if>>
   <<case "Foundry">>
-  <<include "Auth">><<if State.metadata.get('patreonPass') !== $_>><<run setup.openDialog({
-      header: 'Patreon Only',
-      passage: 'ImportPatreon',
-      rerender: true
-    })>><<else>>
     <<set _exportContent to JSON.stringify(setup.outputEverything())>>
     <<replace "#tutorial">><<include "FoundryTutorial">><</replace>><</if>>
 <</switch>>
