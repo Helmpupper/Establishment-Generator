@@ -3,10 +3,10 @@
 # Dockerfile for running Eigengrau's Essential Establishment Generator
 #
 # Build with:
-#     docker build --tag=eeeg:latest .
+#     docker build --tag=helmpup/eeeg:dev .
 #
 # To run a server on localhost:8080, use:
-#     docker run -p 8080:80 eeeg:latest
+#     docker run -p 8080:80 helmpup/eeeg:dev
 #
 # The container is using nodejs's http-server to run a basic static webserver on :80.
 # You can either visit the container's IP address (172.17.something) or bind it to the
